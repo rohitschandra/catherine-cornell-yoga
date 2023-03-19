@@ -1180,6 +1180,14 @@ input, select, textarea {
 			background-color: #000000;
 		}
 
+		@media screen and (max-width: 480px) {
+
+			#bg:after {
+				background-size: cover;
+			}
+
+		}
+
 /* Wrapper */
 
 	#wrapper {
@@ -1291,6 +1299,9 @@ input, select, textarea {
 			}
 
 		#header .logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
@@ -1300,6 +1311,11 @@ input, select, textarea {
 
 			#header .logo .icon:before {
 				font-size: 2rem;
+			}
+
+			#header .logo img {
+				width: 4rem;
+				height: 4em;
 			}
 
 		#header .content {
